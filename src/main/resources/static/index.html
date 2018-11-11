@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>REST file upload</title>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="base64.js"></script>
+    <script src="index.js"></script>
+</head>
+<body>
+
+<form>
+    <h1>1</h1>
+    Select an image: <input id="fileInput" type="file">
+
+    <hr/>
+
+    <h1>2</h1>
+    <button id="uploadAsJson" type="button">Upload as Json</button>&nbsp;
+    <button id="uploadAsBytes" type="button">Upload as bytes</button>
+</form>
+
+<hr/>
+
+<h1>3</h1>
+<button id="downloadAsJson" type="button">Download as Json</button>&nbsp;
+<button id="downloadAsBytes" type="button">Download as Bytes</button>
+
+<h1>Downloaded image</h1>
+<img id="image" src="">
+
+<script>
+    b64 = {
+        fromByteArray: fromByteArray,
+        toByteArray: toByteArray
+    };
+</script>
+
+</body>
+</html>
